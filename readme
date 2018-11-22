@@ -1,0 +1,65 @@
+# Project Scope Outline
+
+### Description of Project
+- One or two sentences describing what your app should do and how to use it.
+-- Create an game that will cycle through a list of questions and present three possible answers
+-- When a user answers one correctly, mark that question as solved
+-- display a counter of number of questions solved
+
+
+### MVP (Minimum Viable Product) Requirements
+- 'Must have' functionality for your app
+- Write out in bullet points the bare minimum that your app must be able to do for it to be usable 
+
+-- Present a question with 3 options
+-- Get selected answer
+-- Show the user if anwer is correct or not
+-- Update score
+-- Refresh question list so that answered questions are not shown again
+
+### Stretch Goals
+- Any nice to have functionality
+- Error handling, conditional css, etc...
+--> Restart game
+--> A timer for answer. 
+--> You skip the question if you don't submit ans by the time timer runs out
+
+
+
+## TO DO:
+
+Data/State Management
+- Think about what data your app uses and how to keep track of it. What data structures (think objects and arrays) will you use to manage your application state?
+- What user interaction will change the state of your application? How will you handle this?
+
+const flashCards = [
+    {
+        question: "what is 2 + 2?".
+        answer: 4,
+        options: [
+            5,
+            3
+        ]
+    }
+]
+
+Question&Answer --> Object
+Radio buttons as answer --> User can select only one answer
+Submit buttton (Enabled when an answer is selected, disabled when no answes are selected) --> 
+    -- Tells the user if their answer is right or wrong
+    -- Triggers new question with answer options
+Skip button to skip the question --> New question is shown
+Score counter --> Updates when submitted answer is right. Does not update when answer is wrong
+
+
+Pseudo Code
+- Write out in sentences (or bullet points) how you are going to break down the tasks you need to handle to meet your MPV requirements
+- Think of what functions you need and how you will call them to figure out the flow of your app
+
+-- Ask a question to the user and give them 3 answer options
+-- Answer options --> One should be correct key-value pair Q&A and the other one
+-- Submit(disabled) Skip(enabled) --> These buttons should be displayed with the question/answer
+-- When the user selects an aswer enable the submit button
+
+Wireframe
+- Do a quick wireframe of the UI (this can be a very simple sketch on paper or use an online tool)

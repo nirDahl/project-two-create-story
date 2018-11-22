@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quiz Flashcard</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="flex align-center">
+    <div class="container-column">
+        <div>
+            <header class="container-column align-center">
+                <h1>The Flashcard Quiz</h1>
+            </header>
+
+        </div>
+
+        <div class="align-center">
+            <form action="" id="quizSection" class="">
+                <div class="container-column align-center">
+                    <h3>Question</h3>
+                    <div id="question" class="card">This is my question for you</div>
+
+                    <div class="container-column" id="ansSection">
+                        <p>Available Options</p>
+                        <label class="align-left" value="option1">
+                            <input type="radio" name="answerOptions">
+                            <span id="option1"></span>
+                        </label>
+                        <label class="align-left" value="option2">
+                            <input type="radio" name="answerOptions">
+                            <span id="option2"></span>
+                        </label>
+                        <label class="align-left" value="option3">
+                            <input type="radio" name="answerOptions">
+                            <span id="option3"></span>
+                        </label>
+
+                    </div>
+                    <div class="container-row">
+                        <input type="submit" value="Submit" id="submitBtn" class="button">
+                        <input type="button" value="Next" id="skipBtn" class="button">
+                        <input type="button" value="Reset" id="resetBtn" class="button">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container-column align-right" id="score">
+        <p></p>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Mali|Poor+Story');
+    </style>
+</body>
+
+</html>

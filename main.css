@@ -1,0 +1,88 @@
+.flex {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+/* background-color: rosybrown; */
+align-items: stretch;
+width: 100%;
+}
+h1 {
+    font-family: 'Poor Story';
+}
+body {
+    margin: 0;
+    padding: 0.5 em;
+    font-family: 'Mali', cursive;
+    font-size:large;
+    font: bold;
+    background: linear-gradient(110deg, #f0d585 60%, #ffed4b 60%);
+}
+p{
+    font-weight:bolder;
+}
+.card {
+    text-align: center;
+    /* background: #fff; */
+    background: rgba(33, 142, 161, 0.2);
+    margin: auto;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+.container-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch ;
+    width: 90%;
+    padding: 0.01px;
+    position: relative;
+}
+.container-row {
+    display: block;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+.scoreDesc {
+    padding-right:10px;
+    color: darkred;
+    font: 300
+}
+
+.flex-wrap {
+    flex-wrap: nowrap;
+}
+.align-center {
+    align-items: center;
+}
+.align-right {
+    align-items: flex-end;
+}
+.align-left {
+    align-items: flex-start;
+}
+.yellow-background{
+    background-color: yellow;
+    opacity: 0.4
+}
+.green-background{
+    background-color: green;
+    opacity: 0.6
+}
+.red-background{
+    background-color: red;
+    opacity: 0.6;
+    color: white;
+}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-flex;
+    font-size: 16px;
+    border-radius: 7px;
+}
